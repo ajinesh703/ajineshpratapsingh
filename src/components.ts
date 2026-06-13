@@ -91,7 +91,7 @@ function renderNewsCard(article: NewsArticle): string {
   const featuredClass = article.featured ? 'featured' : '';
 
   return `
-    <article class="news-card ${featuredClass}" id="${article.id}">
+    <article class="news-card ${featuredClass}" id="${article.id}" data-id="${article.id}">
       <div class="card-content">
         <div class="card-meta">
           <span class="card-category">${article.category}</span>
@@ -101,7 +101,11 @@ function renderNewsCard(article: NewsArticle): string {
         <p class="card-excerpt">${article.excerpt}</p>
         <div class="card-footer">
           <span class="read-time">${article.readTime}</span>
-          <a href="#" class="card-link">read →</a>
+          <div class="card-actions">
+            <button class="btn-paper btn-read-more" data-url="${article.url || '#'}" data-action="read">read →</button>
+            <button class="btn-paper btn-bookmark" aria-label="Bookmark">${icons.bookmark}</button>
+            <button class="btn-paper btn-share" data-url="${article.url || '#'}" data-title="${article.title}" aria-label="Share">${icons.externalLink} share</button>
+          </div>
         </div>
       </div>
     </article>
@@ -132,7 +136,7 @@ function renderResearchCard(item: ResearchItem, index: number): string {
   const displayCategory = categoryLabels[item.category] || item.category;
 
   return `
-    <article class="research-card" id="${item.id}" data-category="${item.category}">
+    <article class="research-card" id="${item.id}" data-id="${item.id}" data-category="${item.category}">
       <div class="research-number">${num}</div>
       <div class="research-content">
         <div class="card-meta">
@@ -146,7 +150,11 @@ function renderResearchCard(item: ResearchItem, index: number): string {
         </div>
         <div class="card-footer">
           <span class="research-source">${item.source}</span>
-          <a href="#" class="card-link">read →</a>
+          <div class="card-actions">
+            <button class="btn-paper btn-read-more" data-url="${item.url || '#'}" data-action="read">read →</button>
+            <button class="btn-paper btn-bookmark" aria-label="Bookmark">${icons.bookmark}</button>
+            <button class="btn-paper btn-share" data-url="${item.url || '#'}" data-title="${item.title}" aria-label="Share">${icons.externalLink} share</button>
+          </div>
         </div>
       </div>
     </article>
@@ -180,8 +188,10 @@ export function renderResearchSection(items: ResearchItem[]): string {
 
 // ---- Paper Card ----
 function renderPaperCard(paper: ResearchPaper): string {
+  const filename = paper.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '.pdf';
+
   return `
-    <article class="paper-card" id="${paper.id}">
+    <article class="paper-card" id="${paper.id}" data-id="${paper.id}">
       <div class="paper-header">
         <div class="paper-meta-row">
           <span class="paper-year">${paper.year}</span>
@@ -193,8 +203,15 @@ function renderPaperCard(paper: ResearchPaper): string {
       <p class="paper-authors">${paper.authors}</p>
       <p class="paper-abstract">${paper.abstract}</p>
       <div class="paper-actions">
-        <a href="#" class="btn-paper">${icons.download} pdf</a>
-        <a href="#" class="btn-paper">${icons.externalLink} arxiv</a>
+        <button class="btn-paper btn-download" data-pdf="${paper.pdfUrl || '#'}" data-action="download" data-filename="${filename}">
+          ${icons.download} pdf
+        </button>
+        <button class="btn-paper btn-read-more" data-url="${paper.arxivUrl || '#'}" data-action="read">
+          ${icons.externalLink} arxiv
+        </button>
+        <button class="btn-paper btn-share" data-url="${paper.arxivUrl || '#'}" data-title="${paper.title}" aria-label="Share">
+          ${icons.externalLink} share
+        </button>
         <button class="btn-paper btn-bookmark" aria-label="Bookmark">${icons.bookmark}</button>
       </div>
     </article>
