@@ -1,5 +1,5 @@
 // ============================================
-// NeuralPulse — Main Entry Point (TypeScript)
+// ajineshpratapsingh — Main Entry Point (TypeScript)
 // ============================================
 
 import './style.css';

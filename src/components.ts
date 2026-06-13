@@ -1,5 +1,5 @@
 // ============================================
-// NeuralPulse — Component Renderers
+// ajineshpratapsingh — Component Renderers
 // Dev aesthetic: dense, monospace, no fluff
 // ============================================
 
@@ -14,7 +14,7 @@ export function renderNavbar(): string {
       <div class="nav-container">
         <a href="#" class="nav-logo">
           <span class="logo-icon">${icons.logo}</span>
-          <span class="logo-text">neural<span class="logo-accent">pulse</span></span>
+          <span class="logo-text">ajinesh<span class="logo-accent">pratapsingh</span></span>
         </a>
         <ul class="nav-links" id="nav-links">
           <li><a href="#trending" class="nav-link">trending</a></li>
@@ -249,7 +249,7 @@ export function renderFooter(): string {
           <div class="footer-brand">
             <a href="#" class="nav-logo">
               <span class="logo-icon">${icons.logoSmall}</span>
-              <span class="logo-text">neural<span class="logo-accent">pulse</span></span>
+              <span class="logo-text">ajinesh<span class="logo-accent">pratapsingh</span></span>
             </a>
             <p class="footer-description">Curated AI & ML research, news, and papers for developers and researchers.</p>
           </div>
@@ -281,7 +281,7 @@ export function renderFooter(): string {
           </div>
         </div>
         <div class="footer-bottom">
-          <p>© 2026 neuralpulse</p>
+          <p>© 2026 ajineshpratapsingh</p>
           <p>built by ajinesh pratap singh</p>
         </div>
       </div>
