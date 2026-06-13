@@ -20,6 +20,18 @@ export const newsArticles: NewsArticle[] = [
   },
   {
     id: 'news-2',
+    title: 'US orders Anthropic to disable AI models for all foreign nationals',
+    excerpt:
+      'US orders Anthropic to disable AI models for all foreign nationals',
+    category: 'Generative AI',
+    date: 'June 13, 2025',
+    readTime: '5 min read',
+    featured: false,
+    icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
+    url: 'https://www.aljazeera.com/news/2026/6/13/us-orders-anthropic-to-disable-ai-models-for-all-foreign-nationals',
+  },
+  {
+    id: 'news-3',
     title: 'OpenAI Releases o3-mini: High-Speed Reasoning Model for Coding & STEM',
     excerpt:
       'OpenAI has launched o3-mini, a cost-efficient reasoning model designed for developers. o3-mini provides state-of-the-art performance in software engineering, mathematics, and science, allowing developers to execute complex reasoning steps with minimal latency.',
@@ -31,7 +43,7 @@ export const newsArticles: NewsArticle[] = [
     url: 'https://openai.com/index/openai-o3-mini/',
   },
   {
-    id: 'news-3',
+    id: 'news-4',
     title: 'DeepSeek-R1 Takes the AI World by Storm with SOTA Open Reasoning',
     excerpt:
       'DeepSeek has open-sourced DeepSeek-R1, a reasoning model that rivals OpenAI o1 on math, coding, and logical tasks. Released under the MIT license, it utilizes reinforcement learning to cultivate chain-of-thought processing, starting a new era of open reasoning models.',
@@ -43,7 +55,7 @@ export const newsArticles: NewsArticle[] = [
     url: 'https://github.com/deepseek-ai/DeepSeek-R1',
   },
   {
-    id: 'news-4',
+    id: 'news-5',
     title: 'Google DeepMind Unveils Gemini 2.0 Flash: Speed and Multimodality Combined',
     excerpt:
       'Google announced Gemini 2.0 Flash, a lightweight model optimized for low latency and high-throughput multimodal applications. It offers major enhancements in real-time conversational speeds, tool use, and agentic task execution.',
@@ -55,7 +67,7 @@ export const newsArticles: NewsArticle[] = [
     url: 'https://deepmind.google/technologies/gemini/',
   },
   {
-    id: 'news-5',
+    id: 'news-6',
     title: 'Meta Launches Llama 3.3 70B: High-Efficiency SOTA Open Weights Model',
     excerpt:
       'Meta has released Llama 3.3 70B, which delivers the capabilities of much larger models (like the Llama 3 405B) at a fraction of the compute cost. It features a 128k token context window and excels at multilingual dialogue and tool calling.',
@@ -66,18 +78,7 @@ export const newsArticles: NewsArticle[] = [
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
     url: 'https://ai.meta.com/blog/meta-llama-3-3/',
   },
-  {
-    id: 'news-6',
-    title: 'NVIDIA Announces Blackwell GPUs Entering Full Production for Massive AI Scale',
-    excerpt:
-      'NVIDIA Blackwell architecture GPUs have entered full-scale production. Featuring 208 billion transistors, Blackwell enables organizations to build and run real-time generative AI on trillion-parameter large language models at 25x less cost and energy.',
-    category: 'Hardware',
-    date: 'November 2024',
-    readTime: '3 min read',
-    featured: false,
-    icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>`,
-    url: 'https://nvidianews.nvidia.com/',
-  },
+  
 ];
 
 export const researchItems: ResearchItem[] = [
