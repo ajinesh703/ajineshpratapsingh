@@ -19,6 +19,9 @@
     --amber: #d97706;
     --blue: #2563eb;
 
+    --accent: var(--green);
+    --accent-bg: var(--green-dim);
+
     --mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', Consolas, monospace;
     --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 
@@ -518,6 +521,13 @@ img { max-width: 100%; display: block; }
 }
 
 .card-link:hover { color: var(--text); }
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+}
 
 /* ============================================
    FILTER TABS

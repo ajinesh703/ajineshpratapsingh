@@ -11,6 +11,7 @@ export interface NewsArticle {
   readTime: string;
   featured: boolean;
   icon: string;
+  url?: string;          // ← article link (new tab mein khulega)
 }
 
 export interface ResearchItem {
@@ -21,6 +22,7 @@ export interface ResearchItem {
   date: string;
   source: string;
   tags: string[];
+  url?: string;          // ← research paper/post link
 }
 
 export interface ResearchPaper {
@@ -31,6 +33,8 @@ export interface ResearchPaper {
   year: number;
   venue: string;
   citations: string;
+  pdfUrl?: string;       // ← direct PDF download link
+  arxivUrl?: string;     // ← arXiv / external link (new tab)
 }
 
 export type ResearchCategory = 'llm' | 'cv' | 'rl' | 'acl';
