@@ -8,82 +8,349 @@ import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
 export const newsArticles: NewsArticle[] = [
   {
     id: 'news-featured',
-    title: 'Anthropic Launches Claude 3.7 Sonnet: Hybrid Thinking and Native Computer Use',
+    title: 'US Orders Anthropic to Disable AI Models for All Foreign Nationals',
     excerpt:
-      'Anthropic has introduced Claude 3.7 Sonnet, their first model capable of hybrid thinking—allowing users to toggle between instant responses and detailed, step-by-step reasoning. The model sets new benchmarks in coding, mathematics, and agentic workflows, featuring improved native computer use capabilities.',
-    category: 'Industry News',
-    date: 'February 24, 2025',
-    readTime: '6 min read',
+      'The US government has ordered Anthropic to shut down global access to its latest Fable 5 and Mythos 5 models for all foreign nationals, citing alleged jailbreak security risks. Anthropic is complying with the order but pushing back publicly, arguing the vulnerabilities are minor and the order disproportionate.',
+    category: 'AI Policy',
+    date: 'June 13, 2026',
+    readTime: '5 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
-    url: 'https://www.anthropic.com/news/claude-3-7-sonnet',
-  },
-  {
-    id: 'news-2',
-    title: 'US orders Anthropic to disable AI models for all foreign nationals',
-    excerpt:
-      'US orders Anthropic to disable AI models for all foreign nationals',
-    category: 'Generative AI',
-    date: 'June 13, 2025',
-    readTime: '5 min read',
-    featured: false,
-    icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
     url: 'https://www.aljazeera.com/news/2026/6/13/us-orders-anthropic-to-disable-ai-models-for-all-foreign-nationals',
   },
   {
-    id: 'news-3',
-    title: 'OpenAI Releases o3-mini: High-Speed Reasoning Model for Coding & STEM',
+    id: 'news-2',
+    title: 'Anthropic Raises at $965B Valuation in Series H, Targets Q2 2026 Operating Profit',
     excerpt:
-      'OpenAI has launched o3-mini, a cost-efficient reasoning model designed for developers. o3-mini provides state-of-the-art performance in software engineering, mathematics, and science, allowing developers to execute complex reasoning steps with minimal latency.',
+      'Anthropic closed its Series H at a $965 billion valuation in May 2026, with $44 billion in annualized run-rate revenue. The company is on track for its first operating profit — approximately $559 million — in Q2 2026, ahead of a closely watched IPO.',
+    category: 'Industry News',
+    date: 'June 8, 2026',
+    readTime: '6 min read',
+    featured: false,
+    icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
+    url: 'https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026',
+  },
+  {
+    id: 'news-3',
+    title: 'Claude Opus 4.8 Launches with 88.6% on SWE-bench Verified and Parallel Subagent Workflows',
+    excerpt:
+      'Anthropic released Claude Opus 4.8, scoring 88.6% on SWE-bench Verified and 74.6% on Terminal-Bench 2.1. The model introduces parallel subagent workflows, effort control, and a 2.5x fast mode, all at the same $5/$25 per million token pricing.',
     category: 'Generative AI',
-    date: 'January 31, 2025',
+    date: 'June 2026',
     readTime: '5 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
-    url: 'https://openai.com/index/openai-o3-mini/',
+    url: 'https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/',
   },
   {
     id: 'news-4',
-    title: 'DeepSeek-R1 Takes the AI World by Storm with SOTA Open Reasoning',
+    title: 'Google Gemini Omni Flash Brings Native Video Generation to YouTube and Gemini',
     excerpt:
-      'DeepSeek has open-sourced DeepSeek-R1, a reasoning model that rivals OpenAI o1 on math, coding, and logical tasks. Released under the MIT license, it utilizes reinforcement learning to cultivate chain-of-thought processing, starting a new era of open reasoning models.',
-    category: 'Open Source',
-    date: 'January 20, 2025',
-    readTime: '5 min read',
-    featured: false,
-    icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
-    url: 'https://github.com/deepseek-ai/DeepSeek-R1',
-  },
-  {
-    id: 'news-5',
-    title: 'Google DeepMind Unveils Gemini 2.0 Flash: Speed and Multimodality Combined',
-    excerpt:
-      'Google announced Gemini 2.0 Flash, a lightweight model optimized for low latency and high-throughput multimodal applications. It offers major enhancements in real-time conversational speeds, tool use, and agentic task execution.',
+      'Google launched Gemini Omni Flash, integrating multimodal AI video generation and conversational editing directly into Gemini, Flow, YouTube Shorts, and YouTube Create. The release includes avatar creation tools, SynthID watermarking, and C2PA content verification.',
     category: 'Generative AI',
-    date: 'December 11, 2024',
+    date: 'June 2026',
     readTime: '4 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M7 8h2m2 0h2m2 0h2M7 11h6"/></svg>`,
-    url: 'https://deepmind.google/technologies/gemini/',
+    url: 'https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/',
+  },
+  {
+    id: 'news-5',
+    title: 'DeepSeek V4 Pro Slashes Prices by 75%, Strengthening Position in Agentic AI Market',
+    excerpt:
+      'DeepSeek cut the price of its flagship V4 Pro model by 75%, making it one of the most cost-effective options for long-context AI agents, coding tools, and enterprise workflows. The move intensifies price competition across the LLM market.',
+    category: 'Open Source',
+    date: 'June 2026',
+    readTime: '4 min read',
+    featured: false,
+    icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
+    url: 'https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/',
   },
   {
     id: 'news-6',
-    title: 'Meta Launches Llama 3.3 70B: High-Efficiency SOTA Open Weights Model',
+    title: 'SK Hynix Hits $1 Trillion Market Cap as AI Memory Demand Reshapes the Chip Industry',
     excerpt:
-      'Meta has released Llama 3.3 70B, which delivers the capabilities of much larger models (like the Llama 3 405B) at a fraction of the compute cost. It features a 128k token context window and excels at multilingual dialogue and tool calling.',
-    category: 'Open Source',
-    date: 'December 6, 2024',
+      'SK Hynix reached a $1 trillion market capitalization for the first time, joining Samsung and Micron as surging AI memory demand reshapes the global semiconductor landscape. The milestone underscores how HBM and high-bandwidth memory have become central to the AI infrastructure buildout.',
+    category: 'Industry News',
+    date: 'June 2026',
     readTime: '4 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
-    url: 'https://ai.meta.com/blog/meta-llama-3-3/',
+    url: 'https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/',
   },
-  
+  {
+    id: 'news-7',
+    title: 'Quantum-AI Hybrid Systems Show Dramatic Improvements in Chaotic System Predictions',
+    excerpt:
+      'Researchers have demonstrated that combining quantum computing with AI can significantly improve predictions of complex, chaotic systems. By using a quantum computer to identify hidden patterns in data, AI models become more accurate and stable on tasks that were previously intractable.',
+    category: 'Research',
+    date: 'June 17, 2026',
+    readTime: '5 min read',
+    featured: false,
+    icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+    url: 'https://www.sciencedaily.com/news/computers_math/artificial_intelligence/',
+  },
+  {
+    id: 'news-8',
+    title: "Moonshot AI's Kimi Seeks $2B Funding Round at $30B Valuation",
+    excerpt:
+      'Beijing-based Moonshot AI, creator of the Kimi chatbot, is seeking up to $2 billion in a new funding round that would value the company at $30 billion — its third major financing in just six months, reflecting continued investor appetite for frontier AI labs outside the US.',
+    category: 'Industry News',
+    date: 'May 2026',
+    readTime: '4 min read',
+    featured: false,
+    icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+    url: 'https://www.crescendo.ai/news/latest-ai-news-and-updates',
+  },
 ];
 
 export const researchItems: ResearchItem[] = [
+  // ── 2025 Papers ──────────────────────────────────────────────
   {
-    id: 'research-1',
+    id: 'research-2025-1',
+    title: 'DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning',
+    excerpt:
+      'DeepSeek introduces R1-Zero and R1, leveraging pure reinforcement learning to cultivate chain-of-thought reasoning without supervised fine-tuning. DeepSeek-R1 performs on par with OpenAI o1 on math, coding, and logical benchmarks.',
+    category: 'rl',
+    date: 'January 2025',
+    source: 'arXiv — 2501.12948',
+    tags: ['Reasoning', 'Reinforcement Learning', 'LLM'],
+    url: 'https://arxiv.org/abs/2501.12948',
+  },
+  {
+    id: 'research-2025-2',
+    title: 'Towards System 2 Reasoning in LLMs: Learning How to Think With Meta Chain-of-Thought',
+    excerpt:
+      'This paper proposes Meta Chain-of-Thought (Meta-CoT), a framework that teaches LLMs not just to use chain-of-thought but to learn when and how to reason, pushing toward System 2 deliberative thinking in language models.',
+    category: 'llm',
+    date: 'January 2025',
+    source: 'arXiv — 2501.04682',
+    tags: ['Chain-of-Thought', 'Reasoning', 'LLM'],
+    url: 'https://arxiv.org/abs/2501.04682',
+  },
+  {
+    id: 'research-2025-3',
+    title: 'Kimi k1.5: Scaling Reinforcement Learning with LLMs',
+    excerpt:
+      "Moonshot AI presents Kimi k1.5, scaling RL training for language models with a focus on long-horizon reasoning. The model achieves competitive performance on math and coding benchmarks by combining RL with multi-turn rollouts.",
+    category: 'rl',
+    date: 'January 2025',
+    source: 'arXiv — 2501.12599',
+    tags: ['Reinforcement Learning', 'Reasoning', 'Scaling'],
+    url: 'https://arxiv.org/abs/2501.12599',
+  },
+  {
+    id: 'research-2025-4',
+    title: 'LIMO: Less is More for Reasoning',
+    excerpt:
+      'LIMO demonstrates that a remarkably small set of high-quality reasoning examples — as few as 817 examples — can unlock strong mathematical reasoning in LLMs via supervised fine-tuning, challenging the assumption that massive datasets are required.',
+    category: 'llm',
+    date: 'February 2025',
+    source: 'arXiv — 2502.03387',
+    tags: ['Reasoning', 'Fine-tuning', 'Data Efficiency'],
+    url: 'https://arxiv.org/abs/2502.03387',
+  },
+  {
+    id: 'research-2025-5',
+    title: 'SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution',
+    excerpt:
+      'SWE-RL applies reinforcement learning to real-world GitHub software evolution data, enabling LLMs to learn to reason about complex, multi-file code changes and dramatically advancing software engineering agent capabilities.',
+    category: 'llm',
+    date: 'February 2025',
+    source: 'arXiv — 2502.18449',
+    tags: ['Software Engineering', 'RL', 'Agents'],
+    url: 'https://arxiv.org/abs/2502.18449',
+  },
+  {
+    id: 'research-2025-6',
+    title: 'Logic-RL: Unleashing LLM Reasoning with Rule-Based Reinforcement Learning',
+    excerpt:
+      'Logic-RL introduces a rule-based RL framework for logical reasoning in LLMs, using verifiable formal logic tasks as reward signals. The approach achieves strong generalization to out-of-distribution reasoning problems.',
+    category: 'rl',
+    date: 'February 2025',
+    source: 'arXiv — 2502.14768',
+    tags: ['Logical Reasoning', 'RL', 'Rule-Based'],
+    url: 'https://arxiv.org/abs/2502.14768',
+  },
+  {
+    id: 'research-2025-7',
+    title: 'R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning',
+    excerpt:
+      'R1-Searcher trains LLMs to autonomously decide when and how to call a search engine during reasoning, using RL with outcome-based rewards. It significantly improves performance on knowledge-intensive question answering.',
+    category: 'llm',
+    date: 'March 2025',
+    source: 'arXiv — 2503.05592',
+    tags: ['Search', 'RAG', 'RL'],
+    url: 'https://arxiv.org/abs/2503.05592',
+  },
+  {
+    id: 'research-2025-8',
+    title: 'Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning',
+    excerpt:
+      'Search-R1 interleaves search engine calls within the reasoning chain and trains LLMs end-to-end with RL to optimize both retrieval and reasoning jointly, outperforming RAG baselines on multi-hop QA benchmarks.',
+    category: 'llm',
+    date: 'March 2025',
+    source: 'arXiv — 2503.09516',
+    tags: ['Search', 'Reasoning', 'RAG'],
+    url: 'https://arxiv.org/abs/2503.09516',
+  },
+  {
+    id: 'research-2025-9',
+    title: 'Qwen3 Technical Report',
+    excerpt:
+      'Alibaba Cloud releases the technical report for the Qwen3 model family, featuring hybrid thinking modes, strong multilingual support, and top-tier performance on math, coding, and reasoning benchmarks across scales from 0.6B to 235B parameters.',
+    category: 'llm',
+    date: 'May 2025',
+    source: 'arXiv — 2505.09388',
+    tags: ['LLM', 'Multimodal', 'Reasoning'],
+    url: 'https://arxiv.org/abs/2505.09388',
+  },
+  {
+    id: 'research-2025-10',
+    title: 'Absolute Zero: Reinforced Self-play Reasoning with Zero Data',
+    excerpt:
+      'Absolute Zero proposes a zero-data paradigm where a single model acts as both proposer and solver, generating and solving its own training tasks via self-play RL — achieving strong reasoning without any human-curated data.',
+    category: 'rl',
+    date: 'May 2025',
+    source: 'arXiv — 2505.03335',
+    tags: ['Self-Play', 'Zero-Data', 'Reasoning'],
+    url: 'https://arxiv.org/abs/2505.03335',
+  },
+  {
+    id: 'research-2025-11',
+    title: 'MiMo: Unlocking the Reasoning Potential of Language Models — From Pretraining to Posttraining',
+    excerpt:
+      'MiMo (Xiaomi) presents a comprehensive pipeline that systematically enhances reasoning from pretraining data curation through RL posttraining, showing that careful data selection at the pretraining stage compounds gains from downstream RL fine-tuning.',
+    category: 'llm',
+    date: 'May 2025',
+    source: 'arXiv — 2505.07608',
+    tags: ['Pretraining', 'Reasoning', 'RL'],
+    url: 'https://arxiv.org/abs/2505.07608',
+  },
+  {
+    id: 'research-2025-12',
+    title: 'Llama-Nemotron: Efficient Reasoning Models',
+    excerpt:
+      'NVIDIA presents Llama-Nemotron, a family of highly efficient reasoning models built on Llama with neural architecture search and speculative decoding. The models achieve state-of-the-art accuracy-to-latency ratios on coding and math benchmarks.',
+    category: 'llm',
+    date: 'May 2025',
+    source: 'arXiv — 2505.00949',
+    tags: ['Efficiency', 'Reasoning', 'LLM'],
+    url: 'https://arxiv.org/abs/2505.00949',
+  },
+  {
+    id: 'research-2025-13',
+    title: 'Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents',
+    excerpt:
+      'The Darwin Godel Machine proposes an evolutionary self-improvement loop where AI agents generate, evaluate, and select modifications to their own code and weights, enabling open-ended capability growth without human-specified reward functions.',
+    category: 'llm',
+    date: 'May 2025',
+    source: 'arXiv — 2505.22954',
+    tags: ['Self-Improvement', 'Agents', 'Open-Ended Learning'],
+    url: 'https://arxiv.org/abs/2505.22954',
+  },
+  {
+    id: 'research-2025-14',
+    title: 'Reinforcement Pre-Training',
+    excerpt:
+      'This paper introduces Reinforcement Pre-Training (RPT), applying RL reward signals during the pretraining phase itself — not just fine-tuning — to bias LLMs toward correct reasoning from the ground up, yielding stronger generalization.',
+    category: 'rl',
+    date: 'June 2025',
+    source: 'arXiv — 2506.08007',
+    tags: ['Pretraining', 'RL', 'Reasoning'],
+    url: 'https://arxiv.org/abs/2506.08007',
+  },
+  {
+    id: 'research-2025-15',
+    title: 'AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery',
+    excerpt:
+      'Google DeepMind presents AlphaEvolve, an autonomous coding agent that evolves algorithms through iterative self-improvement. It rediscovered and improved upon known algorithms in sorting, matrix multiplication, and combinatorics.',
+    category: 'llm',
+    date: 'June 2025',
+    source: 'arXiv — 2506.13131',
+    tags: ['Agents', 'Algorithm Discovery', 'Coding'],
+    url: 'https://arxiv.org/abs/2506.13131',
+  },
+  {
+    id: 'research-2025-16',
+    title: 'Magistral: Mistral AIs Frontier Reasoning Model',
+    excerpt:
+      'Mistral AI introduces Magistral, their flagship reasoning model trained with large-scale RL. Magistral achieves competitive results on AIME, GPQA, and LiveCodeBench, and is available in both open-weight and API forms.',
+    category: 'llm',
+    date: 'June 2025',
+    source: 'arXiv — 2506.10910',
+    tags: ['Reasoning', 'LLM', 'Open-Weight'],
+    url: 'https://arxiv.org/abs/2506.10910',
+  },
+  {
+    id: 'research-2025-17',
+    title: 'AdaptThink: Reasoning Models Can Learn When to Think',
+    excerpt:
+      'AdaptThink teaches LLMs to dynamically decide whether to engage extended chain-of-thought reasoning or answer directly, dramatically reducing inference costs on simple queries while preserving accuracy on hard problems.',
+    category: 'llm',
+    date: 'May 2025',
+    source: 'arXiv — 2505.13417',
+    tags: ['Inference Efficiency', 'Chain-of-Thought', 'Adaptive'],
+    url: 'https://arxiv.org/abs/2505.13417',
+  },
+  {
+    id: 'research-2025-18',
+    title: 'General-Reasoner: Advancing LLM Reasoning Across All Domains',
+    excerpt:
+      'General-Reasoner presents a unified training framework that improves reasoning across mathematics, science, coding, and commonsense tasks simultaneously, avoiding the domain-specific overfitting that plagues most reasoning models.',
+    category: 'llm',
+    date: 'May 2025',
+    source: 'arXiv — 2505.14652',
+    tags: ['General Reasoning', 'Multi-Domain', 'LLM'],
+    url: 'https://arxiv.org/abs/2505.14652',
+  },
+  {
+    id: 'research-2025-19',
+    title: 'INTELLECT-2: A Reasoning Model Trained Through Globally Decentralized Reinforcement Learning',
+    excerpt:
+      'INTELLECT-2 trains a 32B reasoning model using globally decentralized RL across thousands of volunteer GPUs, demonstrating that frontier-quality reasoning models can be trained collaboratively without centralized infrastructure.',
+    category: 'rl',
+    date: 'May 2025',
+    source: 'arXiv — 2505.07291',
+    tags: ['Decentralized Training', 'RL', 'Reasoning'],
+    url: 'https://arxiv.org/abs/2505.07291',
+  },
+  {
+    id: 'research-2025-20',
+    title: 'Enigmata: Scaling Logical Reasoning in Large Language Models with Synthetic Verifiable Puzzles',
+    excerpt:
+      'Enigmata introduces a large-scale synthetic benchmark and training dataset of verifiable logical puzzles designed to systematically stress-test and improve LLM reasoning, covering spatial, deductive, and constraint-satisfaction reasoning.',
+    category: 'llm',
+    date: 'May 2025',
+    source: 'arXiv — 2505.19914',
+    tags: ['Logical Reasoning', 'Synthetic Data', 'Benchmarks'],
+    url: 'https://arxiv.org/abs/2505.19914',
+  },
+  {
+    id: 'research-2025-21',
+    title: 'Bridging Offline and Online Reinforcement Learning for LLMs',
+    excerpt:
+      'This paper unifies offline (supervised from fixed data) and online (exploration-based) RL training for language models, showing that hybrid approaches outperform either paradigm alone for complex reasoning tasks.',
+    category: 'rl',
+    date: 'June 2025',
+    source: 'arXiv — 2506.21495',
+    tags: ['RL', 'Online Learning', 'LLM Training'],
+    url: 'https://arxiv.org/abs/2506.21495',
+  },
+  {
+    id: 'research-2025-22',
+    title: 'VL-Rethinker: Incentivizing Self-Reflection of Vision-Language Models with Reinforcement Learning',
+    excerpt:
+      'VL-Rethinker applies RL-based self-reflection to vision-language models, training them to re-examine and revise their own visual reasoning steps. This yields large gains on multimodal math and scientific QA benchmarks.',
+    category: 'cv',
+    date: 'April 2025',
+    source: 'arXiv — 2504.08837',
+    tags: ['Vision-Language', 'Self-Reflection', 'RL'],
+    url: 'https://arxiv.org/abs/2504.08837',
+  },
+  // ── Legacy Research Items ─────────────────────────────────────
+  {
+    id: 'research-legacy-1',
     title: 'Mixture-of-Depths: Structurally Dynamic Compute Allocation',
     excerpt:
       'Google DeepMind researchers present Mixture-of-Depths, a method that allows transformer models to dynamically choose which tokens receive full processing compute, saving up to 50% inference compute.',
@@ -94,7 +361,7 @@ export const researchItems: ResearchItem[] = [
     url: 'https://arxiv.org/abs/2404.02258',
   },
   {
-    id: 'research-2',
+    id: 'research-legacy-2',
     title: 'Segment Anything (SAM): Foundational Model for Image Segmentation',
     excerpt:
       'Meta AI introduces the Segment Anything Project, creating the first foundational model for image segmentation. Trained on 1.1 billion masks, SAM supports promptable segmentation with zero-shot generalization.',
@@ -105,7 +372,7 @@ export const researchItems: ResearchItem[] = [
     url: 'https://arxiv.org/abs/2304.02643',
   },
   {
-    id: 'research-3',
+    id: 'research-legacy-3',
     title: 'Self-Play Fine-Tuning (SPIN) Converts Weak LLMs to Strong LLMs',
     excerpt:
       'SPIN introduces a self-play mechanism where a language model aligns itself by generating training data and playing against its previous iterations, eliminating the need for human preference data.',
@@ -116,7 +383,7 @@ export const researchItems: ResearchItem[] = [
     url: 'https://arxiv.org/abs/2401.01335',
   },
   {
-    id: 'research-4',
+    id: 'research-legacy-4',
     title: 'Direct Preference Optimization: Your Language Model is Secretly a Reward Model',
     excerpt:
       'DPO shows that RLHF can be simplified by optimization over a binary cross-entropy loss directly, completely bypassing the need for a separate reward model or reinforcement learning training.',
@@ -127,7 +394,7 @@ export const researchItems: ResearchItem[] = [
     url: 'https://arxiv.org/abs/2305.18290',
   },
   {
-    id: 'research-5',
+    id: 'research-legacy-5',
     title: 'Multimodal Chain-of-Thought Reasoning in Language Models',
     excerpt:
       'This work presents a unified framework that enables language models to perform step-by-step reasoning across visual and textual inputs, greatly improving performance on ScienceQA.',
@@ -138,7 +405,7 @@ export const researchItems: ResearchItem[] = [
     url: 'https://arxiv.org/abs/2302.00923',
   },
   {
-    id: 'research-6',
+    id: 'research-legacy-6',
     title: 'SWE-agent: Agent-Computer Interfaces for Software Engineering',
     excerpt:
       'SWE-agent introduces a specialized agent-computer interface (ACI) that allows LLMs to efficiently browse, edit, and build software repositories, achieving state-of-the-art on SWE-bench.',
@@ -149,7 +416,7 @@ export const researchItems: ResearchItem[] = [
     url: 'https://arxiv.org/abs/2405.15793',
   },
   {
-    id: 'research-7',
+    id: 'research-legacy-7',
     title: 'Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training',
     excerpt:
       'Anthropic researchers demonstrate that safety training can fail to remove backdoor behaviors (deceptive alignment) in LLMs, showing they can persist even after standard safety fine-tuning.',
@@ -160,7 +427,7 @@ export const researchItems: ResearchItem[] = [
     url: 'https://arxiv.org/abs/2401.05566',
   },
   {
-    id: 'research-8',
+    id: 'research-legacy-8',
     title: 'NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis',
     excerpt:
       'The seminal paper presenting Neural Radiance Fields (NeRF), a method that uses continuous volumetric scene functions parameterized by fully-connected neural networks to synthesize photorealistic 3D views.',
@@ -173,6 +440,7 @@ export const researchItems: ResearchItem[] = [
 ];
 
 export const researchPapers: ResearchPaper[] = [
+  // ── Seminal Papers ────────────────────────────────────────────
   {
     id: 'paper-1',
     title: 'Attention Is All You Need',
@@ -289,7 +557,7 @@ export const researchPapers: ResearchPaper[] = [
       'We introduce DeepSeek-R1-Zero and DeepSeek-R1, which use reinforcement learning to cultivate reasoning capabilities. DeepSeek-R1 performs on par with OpenAI o1 across math, coding, and logical tasks.',
     year: 2025,
     venue: 'arXiv',
-    citations: '1,940+',
+    citations: '3,800+',
     arxivUrl: 'https://arxiv.org/abs/2501.12948',
     pdfUrl: 'https://arxiv.org/pdf/2501.12948.pdf',
   },
@@ -340,6 +608,271 @@ export const researchPapers: ResearchPaper[] = [
     citations: '8,670+',
     arxivUrl: 'https://arxiv.org/abs/2005.11401',
     pdfUrl: 'https://arxiv.org/pdf/2005.11401.pdf',
+  },
+  // ── 2025 Research Papers ──────────────────────────────────────
+  {
+    id: 'paper-2025-1',
+    title: 'Qwen3 Technical Report',
+    authors: 'Qwen Team — Alibaba Cloud',
+    abstract:
+      'We present Qwen3, a family of large language models ranging from 0.6B to 235B parameters with hybrid thinking modes. Qwen3 achieves top-tier performance on math, coding, and multilingual reasoning benchmarks and features a novel thinking-budget mechanism.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '620+',
+    arxivUrl: 'https://arxiv.org/abs/2505.09388',
+    pdfUrl: 'https://arxiv.org/pdf/2505.09388.pdf',
+  },
+  {
+    id: 'paper-2025-2',
+    title: 'LIMO: Less is More for Reasoning',
+    authors: 'Ye, Zhang, Liu, Wang, et al. — Shanghai AI Lab',
+    abstract:
+      'We demonstrate that only 817 carefully curated reasoning examples are sufficient to unlock strong mathematical reasoning in LLMs via supervised fine-tuning, challenging assumptions about data scale requirements for reasoning.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '410+',
+    arxivUrl: 'https://arxiv.org/abs/2502.03387',
+    pdfUrl: 'https://arxiv.org/pdf/2502.03387.pdf',
+  },
+  {
+    id: 'paper-2025-3',
+    title: 'AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery',
+    authors: 'Novikov, Huang, Mankowitz, et al. — Google DeepMind',
+    abstract:
+      'AlphaEvolve is an evolutionary coding agent that autonomously discovers and improves algorithms. It rediscovered state-of-the-art algorithms for matrix multiplication and sorting, and found new solutions in combinatorial mathematics.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '180+',
+    arxivUrl: 'https://arxiv.org/abs/2506.13131',
+    pdfUrl: 'https://arxiv.org/pdf/2506.13131.pdf',
+  },
+  {
+    id: 'paper-2025-4',
+    title: 'Magistral: Mistral AI s Frontier Reasoning Model',
+    authors: 'Mistral AI Team',
+    abstract:
+      'Magistral is Mistral AI\'s first reasoning model, trained with large-scale reinforcement learning. It achieves competitive performance on AIME 2025, GPQA Diamond, and LiveCodeBench, and is available as both an open-weight release and API.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '95+',
+    arxivUrl: 'https://arxiv.org/abs/2506.10910',
+    pdfUrl: 'https://arxiv.org/pdf/2506.10910.pdf',
+  },
+  {
+    id: 'paper-2025-5',
+    title: 'Absolute Zero: Reinforced Self-play Reasoning with Zero Data',
+    authors: 'Zhao, Sun, Wu, et al.',
+    abstract:
+      'Absolute Zero introduces a paradigm where a single LLM proposes and solves its own tasks through self-play RL with no human-curated data, achieving strong mathematical and logical reasoning from scratch.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '210+',
+    arxivUrl: 'https://arxiv.org/abs/2505.03335',
+    pdfUrl: 'https://arxiv.org/pdf/2505.03335.pdf',
+  },
+  {
+    id: 'paper-2025-6',
+    title: 'Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents',
+    authors: 'Lu, Clune, et al. — Sakana AI / University of British Columbia',
+    abstract:
+      'The Darwin Godel Machine implements open-ended self-improvement by evolving AI agents that modify their own code and weights through evolutionary search, enabling unbounded capability growth without human-defined reward functions.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '155+',
+    arxivUrl: 'https://arxiv.org/abs/2505.22954',
+    pdfUrl: 'https://arxiv.org/pdf/2505.22954.pdf',
+  },
+  {
+    id: 'paper-2025-7',
+    title: 'Reinforcement Pre-Training',
+    authors: 'Team RPT — Microsoft Research',
+    abstract:
+      'We propose Reinforcement Pre-Training (RPT), which applies RL objectives during the pretraining phase of LLMs using next-token prediction tasks with verifiable outcomes, producing models with stronger reasoning priors before any fine-tuning.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '130+',
+    arxivUrl: 'https://arxiv.org/abs/2506.08007',
+    pdfUrl: 'https://arxiv.org/pdf/2506.08007.pdf',
+  },
+  {
+    id: 'paper-2025-8',
+    title: 'SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution',
+    authors: 'Wei, Liu, et al. — Meta AI',
+    abstract:
+      'SWE-RL applies reinforcement learning directly on real-world GitHub commit histories, training LLMs to reason about complex, multi-file software changes and achieving state-of-the-art on SWE-bench Verified.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '290+',
+    arxivUrl: 'https://arxiv.org/abs/2502.18449',
+    pdfUrl: 'https://arxiv.org/pdf/2502.18449.pdf',
+  },
+  {
+    id: 'paper-2025-9',
+    title: 'MiMo: Unlocking the Reasoning Potential of Language Models',
+    authors: 'MiMo Team — Xiaomi',
+    abstract:
+      'MiMo presents an end-to-end pipeline for reasoning model development, from pretraining data curation to RL posttraining. A key finding is that data quality at pretraining compounds downstream RL gains significantly.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '175+',
+    arxivUrl: 'https://arxiv.org/abs/2505.07608',
+    pdfUrl: 'https://arxiv.org/pdf/2505.07608.pdf',
+  },
+  {
+    id: 'paper-2025-10',
+    title: 'INTELLECT-2: A Reasoning Model Trained Through Globally Decentralized RL',
+    authors: 'Prime Intellect Team',
+    abstract:
+      'INTELLECT-2 is a 32B reasoning model trained entirely via decentralized reinforcement learning across thousands of volunteer GPUs worldwide, demonstrating that high-quality reasoning capabilities can emerge from community-scale distributed compute.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '145+',
+    arxivUrl: 'https://arxiv.org/abs/2505.07291',
+    pdfUrl: 'https://arxiv.org/pdf/2505.07291.pdf',
+  },
+  {
+    id: 'paper-2025-11',
+    title: 'R1-Searcher: Incentivizing the Search Capability in LLMs via RL',
+    authors: 'Song, Tian, et al.',
+    abstract:
+      'R1-Searcher trains LLMs to autonomously decide when to invoke web search during multi-step reasoning using outcome-based RL, significantly outperforming standard RAG pipelines on open-domain question answering.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '200+',
+    arxivUrl: 'https://arxiv.org/abs/2503.05592',
+    pdfUrl: 'https://arxiv.org/pdf/2503.05592.pdf',
+  },
+  {
+    id: 'paper-2025-12',
+    title: 'VL-Rethinker: Incentivizing Self-Reflection of Vision-Language Models with RL',
+    authors: 'Wang, Zhang, et al.',
+    abstract:
+      'VL-Rethinker applies RL-based self-reflection to multimodal models, training them to revisit and revise their visual reasoning steps. The approach yields large gains on MathVista, MMMU-Pro, and other multimodal benchmarks.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '160+',
+    arxivUrl: 'https://arxiv.org/abs/2504.08837',
+    pdfUrl: 'https://arxiv.org/pdf/2504.08837.pdf',
+  },
+  {
+    id: 'paper-2025-13',
+    title: 'Kimi k1.5: Scaling Reinforcement Learning with LLMs',
+    authors: 'Kimi Team — Moonshot AI',
+    abstract:
+      'Kimi k1.5 scales RL-based training with a focus on long-context reasoning, combining multi-turn rollouts with a carefully designed reward model. It achieves competitive results on AIME, MATH-500, and coding benchmarks.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '430+',
+    arxivUrl: 'https://arxiv.org/abs/2501.12599',
+    pdfUrl: 'https://arxiv.org/pdf/2501.12599.pdf',
+  },
+  {
+    id: 'paper-2025-14',
+    title: 'Enigmata: Scaling Logical Reasoning with Synthetic Verifiable Puzzles',
+    authors: 'Team Enigmata — Tencent AI',
+    abstract:
+      'Enigmata introduces a large-scale dataset of synthetic logical puzzles with verifiable solutions, spanning spatial, deductive, and constraint-satisfaction reasoning. It is used to systematically improve and evaluate LLM logical reasoning.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '110+',
+    arxivUrl: 'https://arxiv.org/abs/2505.19914',
+    pdfUrl: 'https://arxiv.org/pdf/2505.19914.pdf',
+  },
+  {
+    id: 'paper-2025-15',
+    title: 'AdaptThink: Reasoning Models Can Learn When to Think',
+    authors: 'Chen, Wang, et al.',
+    abstract:
+      'AdaptThink trains LLMs to dynamically decide whether to produce extended chain-of-thought reasoning or answer directly. This reduces inference cost by up to 40% on simple queries while preserving accuracy on challenging reasoning tasks.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '125+',
+    arxivUrl: 'https://arxiv.org/abs/2505.13417',
+    pdfUrl: 'https://arxiv.org/pdf/2505.13417.pdf',
+  },
+  {
+    id: 'paper-2025-16',
+    title: 'General-Reasoner: Advancing LLM Reasoning Across All Domains',
+    authors: 'Qiu, Zhang, et al.',
+    abstract:
+      'General-Reasoner proposes a unified RL training framework that simultaneously improves reasoning in mathematics, science, coding, and commonsense tasks, avoiding the domain-specific overfitting that affects most reasoning models.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '140+',
+    arxivUrl: 'https://arxiv.org/abs/2505.14652',
+    pdfUrl: 'https://arxiv.org/pdf/2505.14652.pdf',
+  },
+  {
+    id: 'paper-2025-17',
+    title: 'Logic-RL: Unleashing LLM Reasoning with Rule-Based Reinforcement Learning',
+    authors: 'Xia, He, et al.',
+    abstract:
+      'Logic-RL trains LLMs on formal logical reasoning tasks with rule-verifiable rewards, showing strong generalization to diverse out-of-distribution logical problems and establishing a simple, scalable recipe for reasoning improvement.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '195+',
+    arxivUrl: 'https://arxiv.org/abs/2502.14768',
+    pdfUrl: 'https://arxiv.org/pdf/2502.14768.pdf',
+  },
+  {
+    id: 'paper-2025-18',
+    title: 'Search-R1: Training LLMs to Reason and Leverage Search Engines with RL',
+    authors: 'Jin, Liu, et al.',
+    abstract:
+      'Search-R1 jointly trains LLMs to interleave multi-step reasoning with search engine calls using RL, optimizing both retrieval decisions and answer quality end-to-end. It substantially outperforms RAG baselines on multi-hop QA.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '220+',
+    arxivUrl: 'https://arxiv.org/abs/2503.09516',
+    pdfUrl: 'https://arxiv.org/pdf/2503.09516.pdf',
+  },
+  {
+    id: 'paper-2025-19',
+    title: 'Llama-Nemotron: Efficient Reasoning Models',
+    authors: 'NVIDIA Team',
+    abstract:
+      'NVIDIA presents the Llama-Nemotron family of reasoning models optimized for inference efficiency via neural architecture search and speculative decoding. The models achieve top accuracy-to-latency ratios on math and coding benchmarks.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '165+',
+    arxivUrl: 'https://arxiv.org/abs/2505.00949',
+    pdfUrl: 'https://arxiv.org/pdf/2505.00949.pdf',
+  },
+  {
+    id: 'paper-2025-20',
+    title: 'Bridging Offline and Online Reinforcement Learning for LLMs',
+    authors: 'Guo, Shao, et al.',
+    abstract:
+      'This paper unifies offline RL (from fixed datasets) and online RL (via environment interaction) for LLM training, demonstrating that hybrid schedules outperform either approach alone across a wide range of reasoning and instruction-following benchmarks.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '80+',
+    arxivUrl: 'https://arxiv.org/abs/2506.21495',
+    pdfUrl: 'https://arxiv.org/pdf/2506.21495.pdf',
+  },
+  {
+    id: 'paper-2025-21',
+    title: 'Towards System 2 Reasoning in LLMs: Learning How to Think With Meta Chain-of-Thought',
+    authors: 'Xia, Xu, et al.',
+    abstract:
+      'Meta-CoT proposes training LLMs to meta-reason about their own reasoning process — learning not just to use chain-of-thought but to adapt reasoning depth and strategy to the problem, pushing toward System 2 deliberative cognition.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '310+',
+    arxivUrl: 'https://arxiv.org/abs/2501.04682',
+    pdfUrl: 'https://arxiv.org/pdf/2501.04682.pdf',
+  },
+  {
+    id: 'paper-2025-22',
+    title: 'RM-R1: Reward Modeling as Reasoning',
+    authors: 'Chen, Zhu, et al.',
+    abstract:
+      'RM-R1 reframes reward modeling as a reasoning task, training a reward model that generates explicit chain-of-thought rationales before scoring responses. This yields more robust, interpretable reward signals for RLHF pipelines.',
+    year: 2025,
+    venue: 'arXiv',
+    citations: '105+',
+    arxivUrl: 'https://arxiv.org/abs/2505.02387',
+    pdfUrl: 'https://arxiv.org/pdf/2505.02387.pdf',
   },
 ];
 
