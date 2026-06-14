@@ -75,6 +75,18 @@ img { max-width: 100%; display: block; }
 ::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
 
+.papers-subsection-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 3rem 0 1.5rem;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
+.papers-subsection:first-child .papers-subsection-title {
+  margin-top: 0;
+}
+
 /* ============================================
    NAVBAR
    ============================================ */

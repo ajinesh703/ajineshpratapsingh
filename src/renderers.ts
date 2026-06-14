@@ -7,8 +7,6 @@ import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
 import { icons } from './icons';
 import { categoryLabels } from './data';
 
-
-
 // ---- Navbar ----
 export function renderNavbar(): string {
   return `
@@ -222,6 +220,26 @@ function renderPaperCard(paper: ResearchPaper): string {
 
 // ---- Papers Section ----
 export function renderPapersSection(papers: ResearchPaper[]): string {
+  const chunkSize = 10;
+  const chunks: ResearchPaper[][] = [];
+
+  for (let i = 0; i < papers.length; i += chunkSize) {
+    chunks.push(papers.slice(i, i + chunkSize));
+  }
+
+  const sectionsHTML = chunks
+    .map(
+      (chunk, idx) => `
+      <div class="papers-subsection" id="papers-${idx + 1}">
+        <h3 class="papers-subsection-title">${idx + 1}.</h3>
+        <div class="papers-grid">
+          ${chunk.map(renderPaperCard).join('')}
+        </div>
+      </div>
+    `
+    )
+    .join('');
+
   return `
     <section class="section" id="papers">
       <div class="container">
@@ -230,9 +248,7 @@ export function renderPapersSection(papers: ResearchPaper[]): string {
           <h2 class="section-title">Important Research Papers</h2>
           <p class="section-subtitle">Foundational papers every AI/ML practitioner should know.</p>
         </div>
-        <div class="papers-grid">
-          ${papers.map(renderPaperCard).join('')}
-        </div>
+        ${sectionsHTML}
       </div>
     </section>
   `;
