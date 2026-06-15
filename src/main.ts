@@ -15,6 +15,10 @@ import {
 } from './components';
 import { initInteractions } from './interactions';
 
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { ResearchPapers } from './components/ResearchPapers';
+
 /**
  * Assembles the full page HTML from typed data and component renderers,
  * mounts it to the DOM, then initialises all interactive behaviours.
@@ -32,12 +36,19 @@ function mountApp(): void {
     renderHero(),
     renderTrendingSection(newsArticles),
     renderResearchSection(researchItems),
-    renderPapersSection(researchPapers),
+    renderPapersSection(),
     renderNewsletter(),
     renderFooter(),
   ].join('\n');
 
   app.innerHTML = html;
+
+  // Render React Papers component
+  const reactRootEl = document.getElementById('papers-react-root');
+  if (reactRootEl) {
+    const root = createRoot(reactRootEl);
+    root.render(React.createElement(ResearchPapers, { papers: researchPapers }));
+  }
 
   // Bootstrap interactions after DOM is painted
   initInteractions();

@@ -430,7 +430,7 @@ function initBookmarks(): void {
 // ============================================
 // ---- TOAST NOTIFICATION HELPER ----
 // ============================================
-type ToastType = 'success' | 'error' | 'info';
+export type ToastType = 'success' | 'error' | 'info';
 
 const TOAST_COLORS: Record<ToastType, string> = {
   success: '#22c55e',
@@ -438,7 +438,7 @@ const TOAST_COLORS: Record<ToastType, string> = {
   info:    'var(--accent)',
 };
 
-function showToast(message: string, type: ToastType = 'info', duration: number = 3000): void {
+export function showToast(message: string, type: ToastType = 'info', duration: number = 3000): void {
   // Remove any existing toast
   document.getElementById('np-toast')?.remove();
 
@@ -635,6 +635,54 @@ function initActiveNavHighlight(): void {
   updateActiveNav();
 }
 
+// ---- Paper Pagination ----
+function initPaperPagination(): void {
+  const tabs = document.querySelectorAll<HTMLButtonElement>('.pagination-tab');
+  const cards = document.querySelectorAll<HTMLElement>('.paper-card');
+
+  if (tabs.length === 0 || cards.length === 0) return;
+
+  function showPage(pageNumber: number): void {
+    cards.forEach((card) => {
+      const cardPage = parseInt(card.getAttribute('data-page') || '1', 10);
+      if (cardPage === pageNumber) {
+        card.style.display = 'block';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(10px)';
+        requestAnimationFrame((): void => {
+          card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        });
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Initial show page 1
+  showPage(1);
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', (): void => {
+      tabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const page = parseInt(tab.getAttribute('data-page') || '1', 10);
+      showPage(page);
+
+      // Scroll papers section header into view smoothly when page is changed
+      const papersSection = document.getElementById('papers');
+      if (papersSection) {
+        const navbar = document.getElementById('navbar');
+        const navHeight = navbar ? navbar.offsetHeight : 0;
+        const targetPos = papersSection.getBoundingClientRect().top + window.scrollY - navHeight - 20;
+        window.scrollTo({ top: targetPos, behavior: 'smooth' });
+      }
+    });
+  });
+}
+
 // ============================================
 // Public init — called from main.ts
 // ============================================
@@ -666,6 +714,7 @@ export function initInteractions(): void {
   initFilterTabs();
   initBookmarks();
   initActiveNavHighlight();
+  initPaperPagination();
 
   // ── New functional buttons ──
   initReadButtons();
