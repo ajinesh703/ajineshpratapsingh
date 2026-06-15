@@ -3,7 +3,7 @@
 // Dev aesthetic: dense, monospace, no fluff
 // ============================================
 
-import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
+import type { NewsArticle, ResearchItem } from './types';
 import { icons } from './icons';
 import { categoryLabels } from './data';
 
@@ -188,52 +188,12 @@ export function renderResearchSection(items: ResearchItem[]): string {
   `;
 }
 
-// ---- Paper Card ----
-function renderPaperCard(paper: ResearchPaper): string {
-  const filename = paper.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '.pdf';
-
-  return `
-    <article class="paper-card" id="${paper.id}" data-id="${paper.id}">
-      <div class="paper-header">
-        <div class="paper-meta-row">
-          <span class="paper-year">${paper.year}</span>
-          <span class="paper-venue">${paper.venue}</span>
-        </div>
-        <div class="paper-citations">${icons.star} ${paper.citations}</div>
-      </div>
-      <h3 class="paper-title">${paper.title}</h3>
-      <p class="paper-authors">${paper.authors}</p>
-      <p class="paper-abstract">${paper.abstract}</p>
-      <div class="paper-actions">
-        <button class="btn-paper btn-download" data-pdf="${paper.pdfUrl || '#'}" data-action="download" data-filename="${filename}">
-          ${icons.download} pdf
-        </button>
-        <button class="btn-paper btn-read-more" data-url="${paper.arxivUrl || '#'}" data-action="read">
-          ${icons.externalLink} arxiv
-        </button>
-        <button class="btn-paper btn-share" data-url="${paper.arxivUrl || '#'}" data-title="${paper.title}" aria-label="Share">
-          ${icons.externalLink} share
-        </button>
-        <button class="btn-paper btn-bookmark" aria-label="Bookmark">${icons.bookmark}</button>
-      </div>
-    </article>
-  `;
-}
 
 // ---- Papers Section ----
-export function renderPapersSection(papers: ResearchPaper[]): string {
+export function renderPapersSection(): string {
   return `
     <section class="section" id="papers">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">${icons.document} papers</div>
-          <h2 class="section-title">Important Research Papers</h2>
-          <p class="section-subtitle">Foundational papers every AI/ML practitioner should know.</p>
-        </div>
-        <div class="papers-grid">
-          ${papers.map(renderPaperCard).join('')}
-        </div>
-      </div>
+      <div id="papers-react-root"></div>
     </section>
   `;
 }
