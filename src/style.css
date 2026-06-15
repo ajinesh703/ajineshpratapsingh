@@ -22,10 +22,34 @@
     --accent: var(--green);
     --accent-bg: var(--green-dim);
 
+    --navbar-bg: rgba(253, 253, 253, 0.92);
+    --newsletter-bg: #111111;
+    --newsletter-text: rgba(255, 255, 255, 0.55);
+    --newsletter-title: #ffffff;
+
     --mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', Consolas, monospace;
     --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 
     --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+[data-theme="dark"] {
+    --white: #11141a;
+    --bg: #090b0f;
+    --bg-alt: #161a22;
+    --bg-code: #1e2430;
+    --text: #e2e8f0;
+    --text-2: #94a3b8;
+    --text-3: #64748b;
+    --border: #1e293b;
+    --border-dark: #334155;
+    --green: #22c55e;
+    --green-dim: #052e16;
+
+    --navbar-bg: rgba(9, 11, 15, 0.92);
+    --newsletter-bg: #161a22;
+    --newsletter-text: rgba(255, 255, 255, 0.55);
+    --newsletter-title: #ffffff;
 }
 
 /* --- RESET --- */
@@ -96,7 +120,7 @@ img { max-width: 100%; display: block; }
     left: 0;
     right: 0;
     z-index: 100;
-    background: rgba(253, 253, 253, 0.92);
+    background: var(--navbar-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
@@ -162,7 +186,8 @@ img { max-width: 100%; display: block; }
     gap: 8px;
 }
 
-.search-btn {
+.search-btn,
+.theme-toggle-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,7 +198,8 @@ img { max-width: 100%; display: block; }
     transition: all 0.15s;
 }
 
-.search-btn:hover {
+.search-btn:hover,
+.theme-toggle-btn:hover {
     background: var(--bg-alt);
     color: var(--text);
 }
@@ -767,7 +793,7 @@ img { max-width: 100%; display: block; }
    NEWSLETTER — minimal, not a billboard
    ============================================ */
 .newsletter-card {
-    background: var(--text);
+    background: var(--newsletter-bg);
     border-radius: 6px;
     padding: 48px 40px;
     position: relative;
@@ -783,14 +809,14 @@ img { max-width: 100%; display: block; }
 .newsletter-title {
     font-size: 20px;
     font-weight: 700;
-    color: var(--white);
+    color: var(--newsletter-title);
     letter-spacing: -0.02em;
     margin-bottom: 8px;
 }
 
 .newsletter-text {
     font-size: 13.5px;
-    color: rgba(255,255,255,0.55);
+    color: var(--newsletter-text);
     line-height: 1.6;
     margin-bottom: 20px;
 }

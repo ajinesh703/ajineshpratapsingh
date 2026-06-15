@@ -3,6 +3,7 @@
 // ============================================
 
 import type { FilterCategory, ComponentElements } from './types';
+import { icons } from './icons';
 
 /**
  * Queries and returns all key DOM elements used by interaction handlers.
@@ -683,10 +684,38 @@ function initPaperPagination(): void {
   });
 }
 
+// ---- Theme Toggle ----
+export function initThemeToggle(): void {
+  const toggleBtn = document.getElementById('theme-toggle');
+  
+  // Set initial theme immediately before button check (to prevent flashes on initial page load)
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+
+  if (!toggleBtn) return;
+  
+  // Update button icon accordingly
+  toggleBtn.innerHTML = currentTheme === 'dark' ? icons.sun : icons.moon;
+
+  toggleBtn.addEventListener('click', (): void => {
+    const activeTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    const nextTheme = activeTheme === 'dark' ? 'light' : 'dark';
+
+    document.documentElement.setAttribute('data-theme', nextTheme);
+    localStorage.setItem('theme', nextTheme);
+    toggleBtn.innerHTML = nextTheme === 'dark' ? icons.sun : icons.moon;
+
+    showToast(`Switched to ${nextTheme} mode`, 'success');
+  });
+}
+
 // ============================================
 // Public init — called from main.ts
 // ============================================
 export function initInteractions(): void {
+  // Run theme toggle initialization first to apply correct theme before drawing
+  initThemeToggle();
+
   const els = getElements();
 
   if (els.navbar) {
