@@ -25,6 +25,9 @@ export function renderNavbar(): string {
           <li><a href="#about" class="nav-link">about</a></li>
         </ul>
         <div class="nav-actions">
+          <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+            ${icons.moon}
+          </button>
           <button class="search-btn" id="search-toggle" aria-label="Search">
             ${icons.search}
           </button>
