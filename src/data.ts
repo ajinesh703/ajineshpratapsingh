@@ -8,15 +8,15 @@ import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
 export const newsArticles: NewsArticle[] = [
   {
     id: 'news-featured',
-    title: 'US Orders Anthropic to Disable AI Models for All Foreign Nationals',
+    title: 'Anthropic was given 90 minutes to restrict',
     excerpt:
-      'The US government has ordered Anthropic to shut down global access to its latest Fable 5 and Mythos 5 models for all foreign nationals, citing alleged jailbreak security risks. Anthropic is complying with the order but pushing back publicly, arguing the vulnerabilities are minor and the order disproportionate.',
+      'Anthropic was given 90 minutes to restrict foreign access to its AI models after potential jailbreak was identified: Report',
     category: 'AI Policy',
     date: 'June 13, 2026',
     readTime: '5 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
-    url: 'https://www.aljazeera.com/news/2026/6/13/us-orders-anthropic-to-disable-ai-models-for-all-foreign-nationals',
+    url: 'https://www.firstpost.com/tech/anthropic-was-given-90-minutes-to-restrict-foreign-access-to-its-ai-models-after-potential-jailbreak-was-identified-report-14022806.html',
   },
   {
     id: 'news-2',
@@ -28,13 +28,13 @@ export const newsArticles: NewsArticle[] = [
     readTime: '6 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
-    url: 'https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026',
+    url: 'https://www.tradingview.com/news/reuters.com,2026:newsml_L6N42N14H:0-judge-blocks-subpoena-for-chatgpt-records-in-lender-s-lawsuit/',
   },
   {
     id: 'news-3',
-    title: 'Claude Opus 4.8 Launches with 88.6% on SWE-bench Verified and Parallel Subagent Workflows',
+    title: 'Judge blocks subpoena for ChatGPT records in lenders lawsuit',
     excerpt:
-      'Anthropic released Claude Opus 4.8, scoring 88.6% on SWE-bench Verified and 74.6% on Terminal-Bench 2.1. The model introduces parallel subagent workflows, effort control, and a 2.5x fast mode, all at the same $5/$25 per million token pricing.',
+      'Judge blocks subpoena for ChatGPT records in lenders lawsuit.',
     category: 'Generative AI',
     date: 'June 2026',
     readTime: '5 min read',
