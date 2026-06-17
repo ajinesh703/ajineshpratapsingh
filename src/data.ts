@@ -8,15 +8,15 @@ import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
 export const newsArticles: NewsArticle[] = [
   {
     id: 'news-featured',
-    title: 'Anthropic was given 90 minutes to restrict',
+    title: 'G7 Summit Day 2 LIVE',
     excerpt:
-      'Anthropic was given 90 minutes to restrict foreign access to its AI models after potential jailbreak was identified: Report',
+      'G7 summit focuses on contentious future of AI and U.S. dominance of the industry',
     category: 'AI Policy',
-    date: 'June 13, 2026',
+    date: 'June 17, 2026',
     readTime: '5 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
-    url: 'https://www.firstpost.com/tech/anthropic-was-given-90-minutes-to-restrict-foreign-access-to-its-ai-models-after-potential-jailbreak-was-identified-report-14022806.html',
+    url: 'https://www.thehindu.com/news/international/g7-summit-france-day-2-leaders-discuss-west-asia-conflict-ukraine-russia-war-live-updates-june-17-2026/article71111954.ece',
   },
   {
     id: 'news-2',
