@@ -20,15 +20,15 @@ export const newsArticles: NewsArticle[] = [
   },
   {
     id: 'news-2',
-    title: 'Anthropic Raises at $965B Valuation in Series H, Targets Q2 2026 Operating Profit',
+    title: 'ChatGPT share falls below 50%',
     excerpt:
-      'Anthropic closed its Series H at a $965 billion valuation in May 2026, with $44 billion in annualized run-rate revenue. The company is on track for its first operating profit — approximately $559 million — in Q2 2026, ahead of a closely watched IPO.',
+      'ChatGPT share falls below 50% for the first time ever; here are the AI chatbots that have taken away share from Sam Altman company.',
     category: 'Industry News',
-    date: 'June 8, 2026',
+    date: 'June 18, 2026',
     readTime: '6 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
-    url: 'https://www.tradingview.com/news/reuters.com,2026:newsml_L6N42N14H:0-judge-blocks-subpoena-for-chatgpt-records-in-lender-s-lawsuit/',
+    url: 'https://www.msn.com/en-in/money/news/chatgpt-share-falls-below-50-for-the-first-time-ever-here-are-the-ai-chatbots-that-have-taken-away-share-from-sam-altman-s-company/ar-AA25RE15?ocid=winp2fptaskbar&cvid=c126f39078184470ea4025849e5c7be5&ei=36',
   },
   {
     id: 'news-3',
