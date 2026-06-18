@@ -8,15 +8,15 @@ import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
 export const newsArticles: NewsArticle[] = [
   {
     id: 'news-featured',
-    title: 'G7 Summit Day 2 LIVE',
+    title: 'JPMorgan Blocks Anthropic’s',
     excerpt:
-      'G7 summit focuses on contentious future of AI and U.S. dominance of the industry',
+      'JPMorgan Blocks Anthropic’s Claude for Staff in Hong Kong: Report',
     category: 'AI Policy',
     date: 'June 17, 2026',
     readTime: '5 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
-    url: 'https://www.thehindu.com/news/international/g7-summit-france-day-2-leaders-discuss-west-asia-conflict-ukraine-russia-war-live-updates-june-17-2026/article71111954.ece',
+    url: 'https://analyticsindiamag.com/ai-news/jpmorgan-blocks-anthropics-claude-for-staff-in-hong-kong-report',
   },
   {
     id: 'news-2',
