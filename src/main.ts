@@ -2,6 +2,9 @@
 // ajineshpratapsingh — Main Entry Point (TypeScript)
 // ============================================
 
+import { inject } from '@vercel/analytics'
+
+inject()
 import './style.css';
 import { newsArticles, researchItems, researchPapers } from './data';
 import {
