@@ -8,27 +8,27 @@ import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
 export const newsArticles: NewsArticle[] = [
   {
     id: 'news-featured',
-    title: 'JPMorgan Blocks Anthropic’s',
+    title: 'Using ChatGPT or Claude AI to file ITR?',
     excerpt:
-      'JPMorgan Blocks Anthropic’s Claude for Staff in Hong Kong: Report',
+      'Using ChatGPT or Claude AI to file ITR? Experts warn it may not be as reliable as you think',
     category: 'AI Policy',
-    date: 'June 17, 2026',
+    date: 'June 20, 2026',
     readTime: '5 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
-    url: 'https://analyticsindiamag.com/ai-news/jpmorgan-blocks-anthropics-claude-for-staff-in-hong-kong-report',
+    url: 'https://www.livemint.com/money/personal-finance/using-chatgpt-or-claude-ai-to-file-itr-2026-experts-warn-it-may-not-be-as-reliable-as-you-think-11781970068605.html',
   },
   {
     id: 'news-2',
-    title: 'ChatGPT share falls below 50%',
+    title: 'Consolidate Your AI Subs Like ChatGPT, Claude, and More into One Tool for $70',
     excerpt:
-      'ChatGPT share falls below 50% for the first time ever; here are the AI chatbots that have taken away share from Sam Altman company.',
+      'Consolidate Your AI Subs Like ChatGPT, Claude, and More into One Tool for $70',
     category: 'Industry News',
-    date: 'June 18, 2026',
+    date: 'June 20, 2026',
     readTime: '6 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
-    url: 'https://www.msn.com/en-in/money/news/chatgpt-share-falls-below-50-for-the-first-time-ever-here-are-the-ai-chatbots-that-have-taken-away-share-from-sam-altman-s-company/ar-AA25RE15?ocid=winp2fptaskbar&cvid=c126f39078184470ea4025849e5c7be5&ei=36',
+    url: 'https://www.entrepreneur.com/science-technology/consolidate-your-ai-subs-like-chatgpt-claude-and-more/504773',
   },
   {
     id: 'news-3',
