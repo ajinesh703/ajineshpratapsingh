@@ -32,15 +32,15 @@ export const newsArticles: NewsArticle[] = [
   },
   {
     id: 'news-3',
-    title: 'Judge blocks subpoena for ChatGPT records in lenders lawsuit',
+    title: '3 Indian AI Stocks With Earnings Growth And Margin Pressure',
     excerpt:
-      'Judge blocks subpoena for ChatGPT records in lenders lawsuit.',
+      '3 Indian AI Stocks With Earnings Growth And Margin Pressure',
     category: 'Generative AI',
-    date: 'June 2026',
+    date: '22 June 2026',
     readTime: '5 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
-    url: 'https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/',
+    url: 'https://simplywall.st/stocks/in/tech/nse-netweb/netweb-technologies-india-shares/news/3-indian-ai-stocks-with-earnings-growth-and-margin-pressure',
   },
   {
     id: 'news-4',
