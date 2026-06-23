@@ -8,15 +8,15 @@ import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
 export const newsArticles: NewsArticle[] = [
   {
     id: 'news-featured',
-    title: 'Using ChatGPT or Claude AI to file ITR?',
+    title: 'AI boosts students performance by 127% but not their thinking',
     excerpt:
-      'Using ChatGPT or Claude AI to file ITR? Experts warn it may not be as reliable as you think',
+      'AI boosts students performance by 127% but not their thinking',
     category: 'AI Policy',
     date: 'June 20, 2026',
     readTime: '5 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
-    url: 'https://www.livemint.com/money/personal-finance/using-chatgpt-or-claude-ai-to-file-itr-2026-experts-warn-it-may-not-be-as-reliable-as-you-think-11781970068605.html',
+    url: 'https://www.indiatoday.in/education-today/featurephilia/story/ai-in-the-age-of-learning-ai-boosts-students-performance-by-127-but-not-their-thinking-2927902-2026-06-23',
   },
   {
     id: 'news-2',
