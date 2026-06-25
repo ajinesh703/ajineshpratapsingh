@@ -80,15 +80,15 @@ export const newsArticles: NewsArticle[] = [
   },
   {
     id: 'news-7',
-    title: 'Quantum-AI Hybrid Systems Show Dramatic Improvements in Chaotic System Predictions',
+    title: 'Tech giant Oracle cuts 21,000 jobs as it embraces AI',
     excerpt:
-      'Researchers have demonstrated that combining quantum computing with AI can significantly improve predictions of complex, chaotic systems. By using a quantum computer to identify hidden patterns in data, AI models become more accurate and stable on tasks that were previously intractable.',
+      'Tech giant Oracle cuts 21,000 jobs as it embraces AI',
     category: 'Research',
-    date: 'June 17, 2026',
+    date: 'June 25, 2026',
     readTime: '5 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
-    url: 'https://www.sciencedaily.com/news/computers_math/artificial_intelligence/',
+    url: 'https://www.bbc.com/news/articles/c4gy0x0j5deo',
   },
   {
     id: 'news-8',
