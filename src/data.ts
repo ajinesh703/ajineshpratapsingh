@@ -32,15 +32,15 @@ export const newsArticles: NewsArticle[] = [
   },
   {
     id: 'news-3',
-    title: '3 Indian AI Stocks With Earnings Growth And Margin Pressure',
+    title: 'JP Morgans AI scorecard ranks India high on promise, but low on delivery',
     excerpt:
-      '3 Indian AI Stocks With Earnings Growth And Margin Pressure',
+      'JP Morgans AI scorecard ranks India high on promise, but low on delivery',
     category: 'Generative AI',
-    date: '22 June 2026',
+    date: '25 June 2026',
     readTime: '5 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
-    url: 'https://simplywall.st/stocks/in/tech/nse-netweb/netweb-technologies-india-shares/news/3-indian-ai-stocks-with-earnings-growth-and-margin-pressure',
+    url: 'https://www.business-standard.com/technology/artificial-intelligence/jp-morgan-s-ai-scorecard-ranks-india-high-on-promise-but-low-on-delivery-126062500723_1.html',
   },
   {
     id: 'news-4',
