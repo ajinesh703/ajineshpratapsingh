@@ -92,15 +92,15 @@ export const newsArticles: NewsArticle[] = [
   },
   {
     id: 'news-8',
-    title: "Moonshot AI's Kimi Seeks $2B Funding Round at $30B Valuation",
+    title: "Amazon adds new funding",
     excerpt:
-      'Beijing-based Moonshot AI, creator of the Kimi chatbot, is seeking up to $2 billion in a new funding round that would value the company at $30 billion — its third major financing in just six months, reflecting continued investor appetite for frontier AI labs outside the US.',
+      'Amazon adds new funding, lifting India AI and cloud investment to $48 billion',
     category: 'Industry News',
-    date: 'May 2026',
+    date: 'June 25, 2026',
     readTime: '4 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
-    url: 'https://www.crescendo.ai/news/latest-ai-news-and-updates',
+    url: 'https://www.cnbc.com/2026/06/25/amazon-investment-billion-ai-india.html',
   },
 ];
 
