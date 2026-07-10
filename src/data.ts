@@ -8,15 +8,15 @@ import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
 export const newsArticles: NewsArticle[] = [
 {
     id: 'news-featured',
-    title: 'Anthropic Restores Claude Fable 5 After Government-Triggered Shutdown',
+    title: 'Cloud AI Update',
     excerpt:
-      'Anthropic restored access to Fable 5 on July 2, 2026, following a partial resolution with the US government after the model was suspended under export control directives on June 12. CAIS separately ranked Fable 5 first among all models on real remote-work task benchmarks.',
+      'AI Transforms Architecture With Smart Design And Planning',
     category: 'Industry News',
-    date: 'July 2, 2026',
-    readTime: '5 min read',
+    date: 'July 7, 2026',
+    readTime: '7 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
-    url: 'https://www.theneuron.ai/explainer-articles/around-the-horn-digest-everything-that-happened-in-ai-today-thursday-july-2-2026/',
+    url: 'https://simplywall.st/stocks/us/software/nasdaq-msft/microsoft/news/cloud-ai-update-ai-transforms-architecture-with-smart-design',
   },
   {
     id: 'news-2',
