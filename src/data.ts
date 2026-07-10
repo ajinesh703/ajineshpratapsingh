@@ -13,7 +13,7 @@ export const newsArticles: NewsArticle[] = [
       'AI Transforms Architecture With Smart Design And Planning',
     category: 'Industry News',
     date: 'July 7, 2026',
-    readTime: '5 min read',
+    readTime: '7 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
     url: 'https://simplywall.st/stocks/us/software/nasdaq-msft/microsoft/news/cloud-ai-update-ai-transforms-architecture-with-smart-design',
