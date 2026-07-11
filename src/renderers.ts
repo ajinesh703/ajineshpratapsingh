@@ -309,8 +309,8 @@ export function renderFooter(): string {
           <div class="footer-links-group">
             <h4 class="footer-heading">links</h4>
             <ul class="footer-links">
-              <li><a href="#">github</a></li>
-              <li><a href="#">twitter / x</a></li>
+              <li><a href="https://github.com/ajinesh703" target="_blank" rel="noopener noreferrer">github</a></li>
+              <li><a href="https://x.com/AjineshPra31937" target="_blank" rel="noopener noreferrer">twitter / x</a></li>
               <li><a href="#">rss feed</a></li>
             </ul>
           </div>
