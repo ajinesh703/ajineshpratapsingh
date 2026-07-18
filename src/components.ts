@@ -73,7 +73,7 @@ export function renderHero(): string {
         </div>
         <div class="hero-stats animate-fade-up delay-4">
           <div class="stat">
-            <span class="stat-number" data-count="1240">0</span>
+            <span class="stat-number" data-count="2000">0</span>
             <span class="stat-label">papers</span>
           </div>
           <div class="stat-divider"></div>
