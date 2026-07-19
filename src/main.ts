@@ -13,7 +13,6 @@ import {
   renderTrendingSection,
   renderResearchSection,
   renderPapersSection,
-  renderPortfolio,
   renderNewsletter,
   renderFooter,
 } from './components';
@@ -41,7 +40,6 @@ function mountApp(): void {
     renderTrendingSection(newsArticles),
     renderResearchSection(researchItems),
     renderPapersSection(),
-    renderPortfolio(),
     renderNewsletter(),
     renderFooter(),
   ].join('\n');
