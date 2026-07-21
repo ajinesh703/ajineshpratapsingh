@@ -6,6 +6,7 @@ import { inject } from '@vercel/analytics'
 
 inject()
 import './style.css';
+import './components/PaperChatbot.css';
 import { newsArticles, researchItems, researchPapers } from './data';
 import {
   renderNavbar,
@@ -21,6 +22,7 @@ import { initInteractions } from './interactions';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { ResearchPapers } from './components/ResearchPapers';
+import { PaperChatbot } from './components/PaperChatbot';
 
 /**
  * Assembles the full page HTML from typed data and component renderers,
@@ -42,6 +44,7 @@ function mountApp(): void {
     renderPapersSection(),
     renderNewsletter(),
     renderFooter(),
+    '<div id="chatbot-react-root"></div>',
   ].join('\n');
 
   app.innerHTML = html;
@@ -53,9 +56,17 @@ function mountApp(): void {
     root.render(React.createElement(ResearchPapers, { papers: researchPapers }));
   }
 
+  // Render React Chatbot component
+  const chatbotRootEl = document.getElementById('chatbot-react-root');
+  if (chatbotRootEl) {
+    const root = createRoot(chatbotRootEl);
+    root.render(React.createElement(PaperChatbot, { papers: researchPapers, researchItems: researchItems }));
+  }
+
   // Bootstrap interactions after DOM is painted
   initInteractions();
 }
 
 // Mount when DOM is ready
 document.addEventListener('DOMContentLoaded', mountApp);
+
