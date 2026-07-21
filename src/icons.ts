@@ -45,6 +45,31 @@ export const icons = {
   bookmark: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>`,
   sun: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`,
   moon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`,
+  maleBot: `<svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="48" height="48" rx="14" fill="url(#maleBotBg)" />
+    <!-- Helmet Base -->
+    <path d="M12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24V32C36 34.2091 34.2091 36 32 36H16C13.7909 36 12 34.2091 12 32V24Z" fill="#1E293B"/>
+    <!-- Visor Glowing Eyes -->
+    <rect x="16" y="20" width="16" height="6" rx="3" fill="#22C55E"/>
+    <circle cx="20" cy="23" r="1.5" fill="#FFFFFF"/>
+    <circle cx="28" cy="23" r="1.5" fill="#FFFFFF"/>
+    <!-- Headset & Ears -->
+    <rect x="9" y="22" width="4" height="8" rx="2" fill="#3B82F6"/>
+    <rect x="35" y="22" width="4" height="8" rx="2" fill="#3B82F6"/>
+    <path d="M11 26H7C6.44772 26 6 26.4477 6 27V29C6 29.5523 6.44772 30 7 30H11" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Male Collar & Tie detail -->
+    <path d="M18 36L24 41L30 36" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+    <path d="M22 37H26V43L24 45L22 43V37Z" fill="#22C55E"/>
+    <!-- Antenna -->
+    <circle cx="24" cy="8" r="2.5" fill="#22C55E"/>
+    <line x1="24" y1="10.5" x2="24" y2="12" stroke="#22C55E" stroke-width="2" stroke-linecap="round"/>
+    <defs>
+      <linearGradient id="maleBotBg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#0F172A"/>
+        <stop offset="1" stop-color="#1E293B"/>
+      </linearGradient>
+    </defs>
+  </svg>`,
 } as const;
 
 export type IconName = keyof typeof icons;
