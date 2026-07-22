@@ -163,10 +163,13 @@ export default function PortfolioApp() {
 
       {/* Floating navigation bar */}
       <nav className="w-full flex items-center justify-between mb-12 relative z-50">
-        <a href="/" className="inline-flex items-center gap-2 text-sm font-mono font-semibold tracking-tight text-[var(--accent-color)] group">
-          <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-          <span>back to research hub</span>
-        </a>
+        <div className="flex items-center gap-4">
+          <img src="/logo.png" alt="AI Brain Logo" className="w-10 h-10 rounded-xl shadow-md border border-[var(--card-border)] object-cover" />
+          <a href="/" className="inline-flex items-center gap-2 text-sm font-mono font-semibold tracking-tight text-[var(--accent-color)] group">
+            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+            <span>back to research hub</span>
+          </a>
+        </div>
 
         {/* Custom animated Theme Switch */}
         <button 
