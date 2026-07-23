@@ -47,16 +47,16 @@
 }
 
 [data-theme="dark"] {
-  --bg-color: #0a0a0f; /* Near-black */
-  --card-bg: rgba(255, 255, 255, 0.04);
-  --card-border: rgba(255, 255, 255, 0.05);
+  --bg-color: #1c1c1f; /* Matched to provided image color */
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.04);
   --card-border-hover: rgba(99, 102, 241, 0.35); /* Brighter Indigo for hover glow */
-  --card-highlight: rgba(255, 255, 255, 0.08);
+  --card-highlight: rgba(255, 255, 255, 0.05);
   --accent-color: #6366f1; /* Brighter Indigo for contrast */
   --accent-glow: rgba(99, 102, 241, 0.3);
-  --blob-1: rgba(244, 63, 94, 0.1); /* Rose */
-  --blob-2: rgba(99, 102, 241, 0.08); /* Indigo */
-  --blob-3: rgba(16, 185, 129, 0.06); /* Emerald */
+  --blob-1: rgba(244, 63, 94, 0.08); /* Rose */
+  --blob-2: rgba(99, 102, 241, 0.06); /* Indigo */
+  --blob-3: rgba(16, 185, 129, 0.05); /* Emerald */
   --shadow-color: rgba(0, 0, 0, 0.5);
 }
 
