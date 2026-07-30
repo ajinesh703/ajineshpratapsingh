@@ -20,15 +20,15 @@ export const newsArticles: NewsArticle[] = [
   },
   {
     id: 'news-2',
-    title: 'SAP Acquires Prior Labs, Plans $1.18B Frontier AI Lab for Tabular Data',
+    title: 'Microsoft Quarter Four Results',
     excerpt:
-      'SAP agreed to acquire Freiburg-based startup Prior Labs, a developer of tabular foundation models, and plans to invest over $1.18 billion across four years to build it into a frontier AI lab specialized in structured business data prediction rather than language-based models.',
+      'Microsoft reported strong performance in its fourth quarter, driven by continued growth in cloud services and AI-driven innovations.',
     category: 'Industry News',
-    date: 'July 17, 2026',
+    date: 'July 30, 2026',
     readTime: '4 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M7 8h2m2 0h2m2 0h2M7 11h6"/></svg>`,
-    url: 'https://dentro.de/ai/news/',
+    url: 'https://timesofindia.indiatimes.com/business/india-business/microsoft-q4-results-azure-tops-100-billion-as-ai-growth-helps-beat-earnings-estimates/articleshow/132727782.cms',
   },
   {
     id: 'news-3',
