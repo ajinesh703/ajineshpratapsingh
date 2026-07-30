@@ -32,15 +32,15 @@ export const newsArticles: NewsArticle[] = [
   },
   {
     id: 'news-3',
-    title: 'NVIDIA and ServiceNow Launch Enterprise Autonomous AI Agents',
+    title: 'Google introduces personalised round',
     excerpt:
-      'NVIDIA and ServiceNow expanded their partnership at ServiceNow Knowledge 2026 to deliver governed autonomous AI agents for enterprises, introducing Project Arc, a long-running, self-evolving desktop agent designed for knowledge workers.',
+      'Google introduces personalised round-the-clock AI assistant Gemini Sparks.',
     category: 'Generative AI',
-    date: 'July 16, 2026',
+    date: 'July 30, 2026',
     readTime: '5 min read',
     featured: false,
     icon: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
-    url: 'https://dentro.de/ai/news/',
+    url: 'https://www.business-standard.com/technology/artificial-intelligence/google-introduces-personalised-round-the-clock-ai-assistant-gemini-spark-126072901619_1.html',
   },
   {
     id: 'news-4',
