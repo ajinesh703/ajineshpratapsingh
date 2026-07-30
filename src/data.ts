@@ -8,15 +8,15 @@ import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
 export const newsArticles: NewsArticle[] = [
 {
     id: 'news-featured',
-    title: 'Microsoft Builds Mythos Rival as Oracle Cuts 30,000 Jobs to Fund Stargate',
+    title: 'hey why its not redirect to the users profile and dashboard',
     excerpt:
-      'Microsoft unveiled Project Perception, a multi-model AI security tool combining Anthropic, OpenAI, and its own models, positioned as a cheaper alternative to Claude Mythos 5. Meanwhile Oracle announced cuts of up to 30,000 employees to help fund its $500B Stargate AI infrastructure partnership, underscoring how AI hardware investment is reshaping corporate headcount industry-wide.',
+      'hey why its not redirect to the users profile and dashboard.',
     category: 'Industry News',
-    date: 'July 18, 2026',
+    date: 'July 30, 2026',
     readTime: '6 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
-    url: 'https://aitoolsrecap.com/Blog/AINewsJuly2026.aspx',
+    url: 'https://fortune.com/2026/07/30/the-limits-meta-ai-ambitions/',
   },
   {
     id: 'news-2',
