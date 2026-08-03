@@ -8,15 +8,15 @@ import type { NewsArticle, ResearchItem, ResearchPaper } from './types';
 export const newsArticles: NewsArticle[] = [
 {
     id: 'news-featured',
-    title: 'hey why its not redirect to the users profile and dashboard',
+    title: 'Over 250 data centres in pipeline by 2030',
     excerpt:
-      'hey why its not redirect to the users profile and dashboard.',
+      'Over 250 data centres in pipeline by 2030; to create 4.3 lakh jobs, drive housing demand: Report.',
     category: 'Industry News',
-    date: 'July 30, 2026',
+    date: 'Aug 8, 2026',
     readTime: '6 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
-    url: 'https://fortune.com/2026/07/30/the-limits-meta-ai-ambitions/',
+    url: 'https://www.msn.com/en-in/money/economy/over-250-data-centres-in-pipeline-by-2030-to-create-4-3-lakh-jobs-drive-housing-demand-report/ar-AA29iZvy?ocid=winp2fptaskbar&cvid=8a5d1474d1a8483ce3d3b5706e9306c2&ei=9',
   },
   {
     id: 'news-2',
