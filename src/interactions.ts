@@ -70,15 +70,7 @@ function initMobileMenu(btn: HTMLElement, navLinks: HTMLElement): void {
 // ============================================
 // ---- READ BUTTON — Open in New Tab ----
 // ============================================
-/**
- * Attaches click handlers to all `.btn-read` and `.btn-read-more` buttons.
- * Each button should have a `data-url` attribute with the article/paper URL.
- * Falls back to `data-id` to construct a slug-based URL if needed.
- *
- * HTML example:
- *   <button class="btn-read" data-url="https://arxiv.org/abs/2212.09748">Read Paper</button>
- *   <button class="btn-read-more" data-url="https://openai.com/blog/gpt-5">Read More</button>
- */
+
 function initReadButtons(): void {
   const readSelectors = '.btn-read, .btn-read-more, [data-action="read"]';
 
@@ -103,15 +95,7 @@ function initReadButtons(): void {
 // ============================================
 // ---- DOWNLOAD BUTTON ----
 // ============================================
-/**
- * Handles download for paper/article cards.
- * Supports:
- *  - `data-pdf` → direct PDF URL to download
- *  - `data-url` → fallback: open in new tab if no PDF available
- *
- * HTML example:
- *   <button class="btn-download" data-pdf="https://arxiv.org/pdf/2212.09748">Download PDF</button>
- */
+
 function initDownloadButtons(): void {
   document.querySelectorAll<HTMLButtonElement>('.btn-download, [data-action="download"]').forEach((btn) => {
     btn.addEventListener('click', (e: Event): void => {
@@ -158,15 +142,7 @@ function initDownloadButtons(): void {
 // ============================================
 // ---- SEARCH — Live Filter Across All Cards ----
 // ============================================
-/**
- * Wires up the search input (`#search-input`) to live-filter:
- *  - `.news-card`      → matches title, excerpt, category
- *  - `.research-card`  → matches title, excerpt, tags, source
- *  - `.paper-card`     → matches title, authors, abstract, venue
- *
- * Cards that don't match are hidden; a "no results" message is shown
- * if every card in a section is hidden.
- */
+
 function initSearch(
   toggle: HTMLElement,
   overlay: HTMLElement,
@@ -287,15 +263,7 @@ function filterAllCards(query: string): void {
 // ============================================
 // ---- SHARE BUTTON — Copy Link to Clipboard ----
 // ============================================
-/**
- * Copies the article/paper URL to clipboard.
- * Uses `data-url` on the button, or falls back to `window.location.href`.
- *
- * HTML example:
- *   <button class="btn-share" data-url="https://arxiv.org/abs/2212.09748">Share</button>
- *
- * Also supports the Web Share API on mobile browsers.
- */
+
 function initShareButtons(): void {
   document.querySelectorAll<HTMLButtonElement>('.btn-share, [data-action="share"]').forEach((btn) => {
     btn.addEventListener('click', async (e: Event): Promise<void> => {
@@ -349,14 +317,7 @@ function initShareButtons(): void {
 // ============================================
 // ---- BOOKMARK — Persist in localStorage ----
 // ============================================
-/**
- * Bookmarks are saved to localStorage under the key `ajineshpratapsingh_bookmarks`.
- * Each bookmark is identified by the card's `data-id` attribute.
- *
- * HTML example:
- *   <div class="news-card" data-id="news-featured"> … </div>
- *   <button class="btn-bookmark">…</button>
- */
+
 
 const BOOKMARK_KEY = 'ajineshpratapsingh_bookmarks';
 
@@ -499,7 +460,7 @@ function initScrollAnimations(): void {
           const counters = entry.target.querySelectorAll<HTMLElement>('.stat-number');
           counters.forEach((counter) => {
             const target: number = parseInt(counter.getAttribute('data-count') || '0', 10);
-            if (target > 0) animateCounter(counter, target, 2000);
+            if (target > 0) animateCounter(counter, target, 2200);
           });
         }
 
