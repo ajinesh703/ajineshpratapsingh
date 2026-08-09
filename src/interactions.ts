@@ -460,7 +460,7 @@ function initScrollAnimations(): void {
           const counters = entry.target.querySelectorAll<HTMLElement>('.stat-number');
           counters.forEach((counter) => {
             const target: number = parseInt(counter.getAttribute('data-count') || '0', 10);
-            if (target > 0) animateCounter(counter, target, 2200);
+            if (target > 0) animateCounter(counter, target, 2300);
           });
         }
 
