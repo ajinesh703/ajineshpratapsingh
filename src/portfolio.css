@@ -4,104 +4,174 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-sans: "Inter", sans-serif;
   
-  --animate-mesh-drift: mesh-drift 75s infinite alternate ease-in-out;
-  --animate-mesh-drift-reverse: mesh-drift-reverse 90s infinite alternate ease-in-out;
+  --animate-mesh-drift: mesh-drift 70s infinite alternate ease-in-out;
+  --animate-mesh-drift-reverse: mesh-drift-reverse 85s infinite alternate ease-in-out;
 
   @keyframes mesh-drift {
     0% {
       transform: translate(0px, 0px) rotate(0deg) scale(1);
     }
     50% {
-      transform: translate(80px, 50px) rotate(180deg) scale(1.2);
+      transform: translate(70px, 40px) rotate(180deg) scale(1.15);
     }
     100% {
-      transform: translate(-50px, 80px) rotate(360deg) scale(0.95);
+      transform: translate(-40px, 60px) rotate(360deg) scale(0.95);
     }
   }
   @keyframes mesh-drift-reverse {
     0% {
-      transform: translate(0px, 0px) rotate(360deg) scale(1.1);
+      transform: translate(0px, 0px) rotate(360deg) scale(1.05);
     }
     50% {
-      transform: translate(-60px, -40px) rotate(180deg) scale(0.85);
+      transform: translate(-50px, -30px) rotate(180deg) scale(0.9);
     }
     100% {
-      transform: translate(40px, -70px) rotate(0deg) scale(1.15);
+      transform: translate(30px, -60px) rotate(0deg) scale(1.1);
     }
   }
 }
 
-/* Custom CSS Variables for Light / Dark mode */
+/* ============================================
+   GESTALT PRINCIPLE TOKENS & DESIGN SYSTEM
+   - High figure-ground contrast
+   - Distinct common regions with clean borders
+   - Consistent similarity tokens
+   ============================================ */
 :root {
-  --bg-color: #fbfbf8; /* Warm off-white */
-  --card-bg: rgba(255, 255, 255, 0.6);
-  --card-border: rgba(0, 0, 0, 0.06);
-  --card-border-hover: rgba(79, 70, 229, 0.2); /* Low opacity accent border */
-  --card-highlight: rgba(255, 255, 255, 0.8);
-  --accent-color: #4f46e5; /* Deep Indigo */
-  --accent-glow: rgba(79, 70, 229, 0.15);
-  --blob-1: rgba(244, 63, 94, 0.15); /* Warm rose */
-  --blob-2: rgba(79, 70, 229, 0.12); /* Indigo */
-  --blob-3: rgba(245, 158, 11, 0.1); /* Amber */
-  --shadow-color: rgba(79, 70, 229, 0.08);
+  --bg-color: #f8fafc;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-subtle: #64748b;
+  
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-bg-subtle: rgba(241, 245, 249, 0.7);
+  --card-border: rgba(15, 23, 42, 0.08);
+  --card-border-hover: rgba(99, 102, 241, 0.35);
+  --card-highlight: rgba(255, 255, 255, 0.95);
+  
+  --accent-color: #4f46e5;
+  --accent-glow: rgba(79, 70, 229, 0.12);
+  --accent-hover: #4338ca;
+  --accent-foreground: #ffffff;
+  
+  --emerald-accent: #059669;
+  --emerald-glow: rgba(5, 150, 105, 0.12);
+  
+  --blob-1: rgba(99, 102, 241, 0.08);
+  --blob-2: rgba(236, 72, 153, 0.06);
+  --blob-3: rgba(16, 185, 129, 0.06);
+  
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 12px 36px rgba(79, 70, 229, 0.08);
 }
 
 [data-theme="dark"] {
-  --bg-color: #1c1c1f; /* Matched to provided image color */
-  --card-bg: rgba(255, 255, 255, 0.03);
-  --card-border: rgba(255, 255, 255, 0.04);
-  --card-border-hover: rgba(99, 102, 241, 0.35); /* Brighter Indigo for hover glow */
-  --card-highlight: rgba(255, 255, 255, 0.05);
-  --accent-color: #6366f1; /* Brighter Indigo for contrast */
-  --accent-glow: rgba(99, 102, 241, 0.3);
-  --blob-1: rgba(244, 63, 94, 0.08); /* Rose */
-  --blob-2: rgba(99, 102, 241, 0.06); /* Indigo */
-  --blob-3: rgba(16, 185, 129, 0.05); /* Emerald */
-  --shadow-color: rgba(0, 0, 0, 0.5);
+  --bg-color: #0b0d13;
+  --text-main: #f8fafc;
+  --text-muted: #cbd5e1;
+  --text-subtle: #94a3b8;
+  
+  --card-bg: rgba(18, 21, 31, 0.75);
+  --card-bg-subtle: rgba(26, 31, 46, 0.6);
+  --card-border: rgba(255, 255, 255, 0.07);
+  --card-border-hover: rgba(129, 140, 248, 0.45);
+  --card-highlight: rgba(255, 255, 255, 0.06);
+  
+  --accent-color: #6366f1;
+  --accent-glow: rgba(99, 102, 241, 0.22);
+  --accent-hover: #818cf8;
+  --accent-foreground: #ffffff;
+  
+  --emerald-accent: #10b981;
+  --emerald-glow: rgba(16, 185, 129, 0.18);
+  
+  --blob-1: rgba(99, 102, 241, 0.14);
+  --blob-2: rgba(168, 85, 247, 0.10);
+  --blob-3: rgba(16, 185, 129, 0.08);
+  
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
 }
 
 /* Base Styles */
 body {
   background-color: var(--bg-color);
-  color: var(--text-color);
+  color: var(--text-main);
+  font-family: var(--font-sans);
 }
 
-/* Glassmorphism Card Style */
+/* Common Region — Glassmorphism Container with Sharp Contrast */
 .glass-card {
   background: var(--card-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--card-border);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02), inset 0 1px 0 var(--card-highlight);
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
-              border-color 0.3s ease, 
-              box-shadow 0.3s ease;
+  box-shadow: var(--shadow-md), inset 0 1px 0 var(--card-highlight);
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), 
+              border-color 0.25s ease, 
+              box-shadow 0.25s ease;
 }
 
 .glass-card:hover {
   border-color: var(--card-border-hover);
-  box-shadow: 0 12px 40px var(--shadow-color), inset 0 1px 0 var(--card-highlight);
+  box-shadow: var(--shadow-lg), inset 0 1px 0 var(--card-highlight);
 }
 
-/* Animated Background Noise */
-.noise-overlay {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3联%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
-}
-
-/* Underline Animation */
-.link-underline {
-  position: relative;
-}
-.link-underline::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
+/* Figure-Ground Pop Button (Primary CTA) */
+.btn-primary-cta {
   background-color: var(--accent-color);
-  transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  color: var(--accent-foreground);
+  box-shadow: 0 4px 14px var(--accent-glow);
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-.link-underline:hover::after {
-  width: 100%;
+
+.btn-primary-cta:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px var(--accent-glow);
+}
+
+.btn-primary-cta:active {
+  transform: translateY(0);
+}
+
+/* Similarity — Standard Action Buttons */
+.btn-secondary-action {
+  background: var(--card-bg-subtle);
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn-secondary-action:hover {
+  border-color: var(--card-border-hover);
+  color: var(--accent-color);
+  transform: translateY(-2px);
+  background: var(--card-bg);
+}
+
+.btn-secondary-action:active {
+  transform: translateY(0);
+}
+
+/* Texture overlay for subtle tactile feel */
+.noise-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+}
+
+/* Clean Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
 }
