@@ -17,6 +17,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         portfolio: resolve(__dirname, 'portfolio/index.html'),
+        cookedCoder: resolve(__dirname, 'cooked-coder/index.html'),
       },
     },
   },
