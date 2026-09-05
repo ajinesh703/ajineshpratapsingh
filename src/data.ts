@@ -13,7 +13,7 @@ export const newsArticles: NewsArticle[] = [
       'Nvidia agreed to buy Hugging Face in a deal combining roughly $11.9 billion in cash with about $1 billion in retention equity for staff. Hugging Face says its model hub will stay open to rival chipmakers and models, but the acquisition raises questions about how independent the open-source AI hub can remain under Nvidia ownership.',
     category: 'Industry News',
     date: 'Sep 4, 2026',
-    readTime: '5 min read',
+    readTime: '3 min read',
     featured: true,
     icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/><path d="M12 8v5M12 16h.01"/></svg>`,
     url: 'https://aiweekly.co/ai-news-today/edition/2026-09-04',
